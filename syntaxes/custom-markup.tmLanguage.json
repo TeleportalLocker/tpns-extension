@@ -1,0 +1,36 @@
+{
+    "name": "Custom Markup",
+    "scopeName": "source.custom-markup",
+    "fileTypes": ["tpns"],
+    "patterns": [
+      {
+        "match": "organisation:",
+        "name": "entity.name.tag.organisation"
+      },
+      {
+        "match": "project:",
+        "name": "entity.name.tag.project"
+      },
+      {
+        "match": "class:",
+        "name": "entity.name.tag.class"
+      },
+      {
+        "match": "function:",
+        "name": "entity.name.tag.function"
+      },
+      {
+        "match": "attribute:",
+        "name": "entity.name.tag.attribute"
+      },
+      {
+        "match": "title",
+        "name": "entity.name.tag.params"
+      },
+      {
+        "match": "type",
+        "name": "entity.name.tag.params"
+      }
+    ]
+  }
+  

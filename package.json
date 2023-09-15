@@ -1,0 +1,105 @@
+{
+  "name": "tpns-extension",
+  "version": "0.0.1",
+  "publisher": "teleportal",
+  "description": "",
+  "main": "index.js",
+  "engines": {
+    "node": ">=10.0.0",
+    "vscode": "^1.60.0"
+  },
+  "devDependencies": {
+    "vscode": "^1.60.0" 
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "activationEvents": [
+    "onLanguage:tpns"
+  ],
+  "icon": "images/logo.png",
+  "contributes": {
+    "languages": [
+      {
+        "id": "custom-markup",
+        "extensions": ["tpns"],
+        "icon": {
+          "light": "./images/logo.png",
+          "dark": "./images/logo.png"
+        }
+      }
+    ],
+    "grammars": [
+      {
+        "language": "custom-markup",
+        "scopeName": "source.custom-markup",
+        "path": "./syntaxes/custom-markup.tmLanguage.json"
+      }
+    ],
+    "colors": [
+      {
+        "id": "entity.name.tag.organisation",
+        "description": "Custom Markup Tag",
+        "defaults": {
+          "dark": "#ba3e3e",
+          "light": "#ba3e3e",
+          "highContrast": "#ba3e3e",
+          "highContrastLight": "#ba3e3e"
+        }
+      },
+      {
+        "id": "entity.name.tag.project",
+        "description": "Custom Markup Tag",
+        "defaults": {
+          "dark": "errorForeground",
+          "light": "errorForeground",
+          "highContrast": "#ba843e",
+          "highContrastLight": "#ba843e"
+        }
+      },
+      {
+        "id": "entity.name.tag.class",
+        "description": "Custom Markup Tag",
+        "defaults": {
+          "dark": "errorForeground",
+          "light": "errorForeground",
+          "highContrast": "#61ba3e",
+          "highContrastLight": "#61ba3e"
+        }
+      },
+      {
+        "id": "entity.name.function",
+        "description": "Custom Markup Tag",
+        "defaults": {
+          "dark": "errorForeground",
+          "light": "errorForeground",
+          "highContrast": "#8c3eba",
+          "highContrastLight": "#8c3eba"
+        }
+      },
+      {
+        "id": "entity.name.tag.attribute",
+        "description": "Custom Markup Tag",
+        "defaults": {
+          "dark": "errorForeground",
+          "light": "errorForeground",
+          "highContrast": "#3e7aba",
+          "highContrastLight": "#3e7aba"
+        }
+      },
+      {
+        "id": "entity.name.tag.params",
+        "description": "Custom Markup Tag",
+        "defaults": {
+          "dark": "errorForeground",
+          "light": "errorForeground",
+          "highContrast": "#cccccc",
+          "highContrastLight": "#cccccc"
+        }
+      }
+    ]
+  },  
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

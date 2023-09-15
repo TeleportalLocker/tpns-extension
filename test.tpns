@@ -1,0 +1,23 @@
+org "MyOrganisation" as Orgainisation:
+    title   =   ""
+    eee     =   ""
+    project =  [
+        projects.folder_name.project_a_name
+    ]
+
+org "MyProject" as Project:
+    pass
+
+org "MyApplication" as Application
+
+source "SQL" as SQL
+
+data "MyDataClass" as DataClass
+    pass
+
+rules "" as Token
+rules "" as Env
+
+users "" right:
+    organisation = ["all"]
+    project = ["all"]

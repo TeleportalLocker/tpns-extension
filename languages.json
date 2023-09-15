@@ -1,0 +1,10 @@
+{
+    "languages": [
+      {
+        "id": "custom-markup",
+        "aliases": ["Custom Markup", "custom-markup", "tpns"],
+        "extensions": [".tpns"]
+      }
+    ]
+}
+  
