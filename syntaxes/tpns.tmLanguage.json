@@ -1,0 +1,36 @@
+{
+  "scopeName": "source.tpns",
+  "patterns": [
+    {
+      "name": "function.tpns",
+      "match": "\\bfunction\\b"
+    },
+    {
+      "name": "class.tpns",
+      "match": "\\b(Project|Organisation|Application)\\b"
+    },
+    {
+      "name": "keyword.tpns",
+      "match": "\\b(as)\\b"
+    },
+    {
+      "name": "comment.tpns",
+      "match": "//.*$"
+    },
+    {
+      "name": "number.tpns",
+      "match": "\\b(\\d+\\.\\d+|\\d+)\\b"
+    },
+    {
+      "name": "string.tpns",
+      "begin": "\"",
+      "end": "\"",
+      "patterns": [
+        {
+          "name": "constant.character.escape.tpns",
+          "match": "\\\""
+        }
+      ]
+    }
+  ]
+}

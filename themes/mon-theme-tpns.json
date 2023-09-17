@@ -1,0 +1,20 @@
+{
+    "name": "Mon Thème TPNS",
+    "type": "dark", 
+    "colors": {
+      "function.tpns": "#50E3C2", 
+      "variable.tpns": "#FFA500",
+      "keyword.tpns": "#FF5733", 
+      "comment.tpns": "#6B808C", 
+      "string.tpns": "#E9C062", 
+      "number.tpns": "#FFCD22"
+    },
+    "tokenColors": [
+      {
+        "scope": "customKeyword.tpns",
+        "settings": {
+          "foreground": "#7D3C98"
+        }
+      }
+    ]
+  }
